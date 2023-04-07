@@ -1,0 +1,42 @@
+.circle1 {
+  /*  display: flex;
+   /* align-content: center; */
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+
+.img{
+  height:200px; 
+  width: 250px;
+   position: relative;
+
+}
+
+.img .hover{
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+
+
+
+
+ .hover{
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+display: none;
+   
+}
+
+.img:hover .hover{
+    display: inline;
+}
+
+}

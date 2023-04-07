@@ -1,0 +1,234 @@
+/*--------- generic styles -----------*/
+@media screen and (min-width: 400px) {
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+html {
+    font-size: 10px;
+}
+
+
+ body {
+     font: 300 1.7rem/1.5 Georgia, serif;
+     
+} 
+
+h1 {
+
+    font:  500 4rem Tahoma, Ariel, sans-serif;
+}
+
+h2 {
+    font: 300 3rem Tahoma, Ariel, sans-serif;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+a {
+    font-weight: 400;
+    color: #9aad1a;
+}
+a:hover {
+    color: #ad551a;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/*----- main css ------*/
+
+body {
+    background-color: darkgray;
+}
+
+ main a:link {
+    color: #0e0a0a;
+}
+
+ main a:visited {
+    color: #333;
+}
+
+
+
+#mainContainer {
+   /* width: 800px;  */
+    margin: auto;
+
+}
+
+header {
+    
+    background-color: #0e0a0a;
+    color: white;
+    padding: 4px 0;
+}
+
+header h1, header h2 {
+    
+    padding: 0 10px;
+}
+
+header h1 {
+    
+    font-size: 40px;
+        margin: 10px 0 2px;
+}
+
+header p {
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 2px 0 10px;
+}
+
+
+nav {
+    border-top: solid 2px white;
+    padding: 10px 0;
+    text-align: center;
+    
+    }
+
+nav a:link {
+    
+    background-color: white;
+    border: solid 1px #c9f2ed;
+    color: #0e0a0a;
+    padding: 2px 6px;
+    margin: 4px 10px 0;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+
+nav a:visited {
+    color: #666;
+}
+
+nav a:hover {
+    background-color: #f9f7f4;
+    color: #0e0a0a;
+    border-color: #0e0a0a;
+}
+
+nav a:active {
+    background-color: white;
+    color: #666;
+}
+
+
+
+main {
+ background: rgb(0,0,0);
+background: linear-gradient(325deg, rgba(0,0,0,1) 0%, rgba(153,153,153,1) 22%, rgba(255,255,255,1) 100%);
+    padding: 20px 10px;
+
+   
+}
+
+article {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #0e0a0a;
+    padding-bottom: 2%;
+    
+}
+
+footer {
+    background-color: #0e0a0a;
+    color: white;
+    text-align: right;
+    padding: 10px 10px 5px;
+}
+
+footer a {
+    color: #ede9e9;
+}
+
+
+footer a:hover {
+    color: white;
+}
+
+
+.onLeft {
+    float: left;
+    padding-right: 15px;
+     display: unset;
+    page-break-after: none;
+
+}
+    
+.onLeft1 {
+    float: left;
+    padding-right: 15px;
+    display: block;
+    page-break-after: always;
+}
+
+
+
+.clearIt {
+    clear: left;
+}
+
+.a1 {
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+
+
+p{
+    margin-right: 5px;
+}
+
+.gridContainer{
+    display: grid;
+   grid-template-areas:
+        "ghead ghead ghead"
+        "grid1 grid2 grid3"
+        "grid4 grid5 grid6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 4px black;
+    background-image: url("../images/MuldHirez.jpg");
+    
+}
+    
+    .ghead{grid-area: ghead;}
+    .grid1{grid-area: grid1;}
+    .grid2{grid-area: grid2;}
+    .grid3{grid-area: grid3;}
+    .grid4{grid-area: grid4;}
+    .grid5{grid-area: grid5;}
+    .grid6{grid-area: grid6;}
+
+    .ghead, .grid1, .grid2, .grid3, .grid4, .grid5, .grid6{
+         text-align: center;
+    border: 1px solid black;
+       text-shadow:     
+                -1px -1px 0 white,
+                 1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+    }
+    
+    video{
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+
+}
